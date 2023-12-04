@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-Console.Clear();
+﻿Console.Clear();
 //Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
 //и возвращает значение этого элемента или же указание, что такого элемента нет.
 
@@ -42,7 +40,7 @@ void findElementOnPosition(int [,] matrixWeHave, int pos0, int pos1)
             if(pos0 > matrixWeHave.GetLength(0) || pos1 > matrixWeHave.GetLength(1))
             {
                 Console.WriteLine("Введенного значения не существует");
-                break;
+                break; //помню, что это дурной тон, но не дошло, как правильнее использовать здесь метод флажка
             }
     }
 }
